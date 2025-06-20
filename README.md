@@ -59,6 +59,5 @@ streamlit run ui/app.py
 ---
 
 ## 📬 Contact
-Built by [Your Name] · AI Product Owner · AWS Certified
-
----
+Jitendra KUMAR 
+inkedin.com/in/jitendra-kumar-248a2224
