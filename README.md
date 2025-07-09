@@ -24,12 +24,9 @@ This project demonstrates a minimal end-to-end machine learning pipeline for ano
 - **Amazon SageMaker**: ML inference (YOLOv5 or custom anomaly model)
 - **Streamlit**: Frontend UI
 
----
-
-## 🚀 Quick Start
 
 ### 1. Set up AWS resources
-- Create an S3 bucket: `your-drone-raw`
+- Create an S3 bucket: `jitendra-drone-raw-data`
 - Deploy your SageMaker endpoint (e.g., YOLOv5)
 
 ### 2. Deploy Lambda
@@ -59,6 +56,33 @@ streamlit run ui/app.py
 ---
 
 ## 📬 Contact
-Built by [Your Name] · AI Product Owner · AWS Certified
+🚀 Built by Jitendra Kumar
 
----
+💼 Roles & Expertise
+
+🧠 AI Product Owner
+
+⚙️ MLOps Engineer (AWS)
+
+☁️ Cloud ML Solutions Architect
+
+🔧 AI DevOps / ML Infrastructure Engineer
+
+🧑‍💼 Freelance AWS Consultant (ML)
+
+📜 Certifications
+
+✅ AWS Certified Machine Learning – Specialty (Jun 2025–Jun 2028)
+
+✅ AWS Certified Solutions Architect – Associate (May 2025–May 2028)
+
+✅ Scrum Product Owner – Scrum Alliance (2023–2025) · ID: 1792999
+
+✅ Leading SAFe 6.0 – Scaled Agile (2024–2026) · ID: 170561671780
+
+✅ DevOps Foundation – LinkedIn Learning (Mar 2025)
+
+✅ Generative AI Masterclass – Outskills (2025)
+
+📬 https://www.linkedin.com/in/jitendra-kumar-248a2224/
+

@@ -1,0 +1,50 @@
+The "Image location" (or "Inference image URI") : 
+
+For most use cases, you'll use a pre-built SageMaker Docker image that includes popular machine learning frameworks. These images are hosted by AWS in Amazon Elastic Container Registry (ECR).
+
+Here's how to find the "Image location" you need:
+
+Understanding SageMaker's Pre-built Images:
+
+SageMaker provides Docker images for various frameworks (TensorFlow, PyTorch, Scikit-learn, XGBoost, etc.) and their versions. When you create your model.tar.gz with your inference.py script, SageMaker expects your inference.py to be compatible with one of these pre-built images.
+
+How to Find the Correct Image URI (Console Method):
+
+Determine your Model's Framework and Python Version:
+
+What machine learning framework did you use to train your "drone model"? (e.g., TensorFlow, PyTorch, Scikit-learn, XGBoost, etc.)
+
+What Python version did you use for your inference.py script and model (e.g., Python 3.8, 3.9, 3.10)?
+
+Go to the AWS SageMaker Documentation for Pre-built Images:
+The most reliable source is the official AWS documentation. Search for "SageMaker pre-built Docker images" or "SageMaker inference container images".
+A good starting point is usually:
+https://docs.aws.amazon.com/sagemaker/latest/dg/ecr-repositories.html
+
+Locate Your Image URI:
+
+On that documentation page, you'll see tables or lists categorized by framework (e.g., "Deep Learning Containers," "Scikit-learn," "XGBoost").
+
+Navigate to the section for your chosen framework.
+
+Find the image URI that matches:
+
+Your AWS Region (e.g., us-east-3).
+
+Your Framework (e.g., pytorch-inference, tensorflow-inference, sklearn-inference).
+
+Your Framework Version (e.g., 2.0.1, 2.15.0, 1.2-1).
+
+Your Python Version (e.g., py310).
+
+Whether you need a CPU or GPU image (most inference often starts with CPU unless high throughput/latency is critical and you have a GPU model).
+
+Example (for PyTorch 2.0.1, Python 3.10, CPU in us-east-1):
+You might find an image URI like:
+763104351884.dkr.ecr.us-east-1.amazonaws.com/pytorch-inference:2.0.1-cpu-py310
+
+Example (for Scikit-learn 1.2-1, Python 3.9, CPU in us-east-1):
+You might find an image URI like:
+683313688378.dkr.ecr.us-east-1.amazonaws.com/sagemaker-scikit-learn:1.2-1-cpu-py39-ubuntu20.04
+
+Important: The account ID (e.g., 763104351884 or 683313688378) at the beginning of the URI is specific to AWS and the service, you'll copy the entire string.

@@ -1,0 +1,1 @@
+Any Python libraries not pre-installed in the SageMaker container image (e.g., opencv-python, pillow, torch), you should list them in a requirements.txt file inside your code/ directory. For our dummy model, json and os are built-in, so requirements.txt isn't strictly necessary, but it's good practice.
